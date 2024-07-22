@@ -40,3 +40,11 @@ _A declaração de variáveis é feita a partir de sua estrutura padrão:_
 A linguagem Java é altamente tipada e alterações de tipos devem ser feitas com muita cautela já que os valores podem ultrapassar o valor permitido do tipo e com isso podemos gerar erros no código.
 
 __Obs:__ A própria linguagem nos informa quando tentamos atribuir uma variavel de possivel valor maior do que o permitido pelo tipo selecionado como seria o caso de um _byte_ recebendo um _int_, o byte não poderia conter o valor de um int já que o mesmo suporta valores de -2.147.483.648 até 2.147.483.647 e o byte apenas valores de -128 até 127.
+
+## Constantes
+
+_A declaração de constantes é feita a partir de sua estrutura padrão:_
+
+    final <Tipo> <NOME_CONSTANTE> = <atribuicaoDeValorObrigatoria>;
+
+É importante resaltar que sempre é necessário declarar a constante em caixa alta para respeitar a convenção.
