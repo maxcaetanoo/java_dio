@@ -26,4 +26,17 @@ tipo | memoria | valor minimo | valor máximo | precisão|
 float| 4 byte | -3,4028E + 38| 3,4028E + 38 | 6 – 7 dígitos
 double| 8 bytes | -1,7976E + 308 | 1,7976E + 308 | 15 dígitos
 
+__Obs:__ O tipo float deve ser valorado sempre com a letra "F" ao final e o long com a letra "L", exemplo:
+
+    float pi = 3.14F;
+    long cpf = 98765432109L;
+
 ## Variáveis
+
+_A declaração de variáveis é feita a partir de sua estrutura padrão:_
+
+    <Tipo> <nomeVariavel> = <atribuicaoDeValorOpcional>;
+
+A linguagem Java é altamente tipada e alterações de tipos devem ser feitas com muita cautela já que os valores podem ultrapassar o valor permitido do tipo e com isso podemos gerar erros no código.
+
+__Obs:__ A própria linguagem nos informa quando tentamos atribuir uma variavel de possivel valor maior do que o permitido pelo tipo selecionado como seria o caso de um _byte_ recebendo um _int_, o byte não poderia conter o valor de um int já que o mesmo suporta valores de -2.147.483.648 até 2.147.483.647 e o byte apenas valores de -128 até 127.
