@@ -35,7 +35,7 @@ __Ex:__
     int divisao = 12 / 3 //Isso equivale a 4
     int modulo = 18 % 3 //Isso equivale a resto 0
 
-_OBS: O operador __+__ quando usado em strings realizará a concatenação de strings_
+_Obs: O operador __+__ quando usado em strings realizará a concatenação de strings_
 __Ex:__ String nomeCompleto = "Humberto" + " Antonio"
 
 ## Unários
@@ -47,3 +47,10 @@ O operadores unários sãu usados em conjunto com operadores aritméticos e tem 
 * _(++)_ Incremento, incrementa mais uma unidade ao valor.
 * _(--)_ Decremento, decrementa mais uma unidade ao valor.
 * _(!)_ Negação, nega o valor da expreção booleana.
+
+_Obs: Incremento ou decremento podem ser efetuados previamente ou posteriormente de acordo com a posição dos sinais __(++)__ ou __(--)__._
+__Ex:__
+    int numero = 5;
+    System.out.println(++numero); // Previo, incrementa mais 1 antes de executar o print
+    System.out.println(numero++); // Posterior, realiza o incremento após executar o print
+    System.out.println(numero); // Como podemos ver o posterior so foi apresentado aqui.
