@@ -37,3 +37,13 @@ __Ex:__
 
 _OBS: O operador __+__ quando usado em strings realizará a concatenação de strings_
 __Ex:__ String nomeCompleto = "Humberto" + " Antonio"
+
+## Unários
+
+O operadores unários sãu usados em conjunto com operadores aritméticos e tem como objetivo realizar operações básicas como incrementar, decrementar e ou inverter valores numéricos e boleanos.
+
+* _(+)_ Positivo, inverte valores negativos para positivos.
+* _(-)_ Negativo, inverte valores positivos para negativos.
+* _(++)_ Incremento, incrementa mais uma unidade ao valor.
+* _(--)_ Decremento, decrementa mais uma unidade ao valor.
+* _(!)_ Negação, nega o valor da expreção booleana.
