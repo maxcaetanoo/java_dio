@@ -20,5 +20,11 @@ public class App {
 
         System.out.println(!ehVerdade); // Mesmo o valor sendo true aqui será apresentado como false pois ele foi
                                         // invertido. durante a exibição
+
+        // Ternários
+        int nota = 7;
+        String aprovacao = nota >= 7 ? "Aprovado" : "Reprovado"; // testa se a nota é maior ou igual a 7 caso sim
+                                                                 // aprovado caso não reprovado
+        System.out.println(aprovacao);
     }
 }

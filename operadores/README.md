@@ -46,7 +46,7 @@ O operadores unários sãu usados em conjunto com operadores aritméticos e tem 
 * _(-)_ Negativo, inverte valores positivos para negativos.
 * _(++)_ Incremento, incrementa mais uma unidade ao valor.
 * _(--)_ Decremento, decrementa mais uma unidade ao valor.
-* _(!)_ Negação, nega o valor da expreção booleana.
+* _(!)_ Negação, nega o valor da expresão booleana.
 
 _Obs: Incremento ou decremento podem ser efetuados previamente ou posteriormente de acordo com a posição dos sinais __(++)__ ou __(--)__._
 __Ex:__
@@ -54,3 +54,10 @@ __Ex:__
     System.out.println(++numero); // Previo, incrementa mais 1 antes de executar o print
     System.out.println(numero++); // Posterior, realiza o incremento após executar o print
     System.out.println(numero); // Como podemos ver o posterior so foi apresentado aqui.
+
+## Ternários
+
+Os operadores ternarios são uma form ade representar uma condição __(if/else)__ em apenas uma linha.
+Os operadores ternários são representados por _?:_ como pode ser visto aoabixo.
+
+__Ex:__ String aprovacao = nota >= 7 ? "Aprovado" : "Reprovado";
