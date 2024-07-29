@@ -34,3 +34,6 @@ __Ex:__
     int multiplicacao = 11 * 2 //Isso equivale a 22
     int divisao = 12 / 3 //Isso equivale a 4
     int modulo = 18 % 3 //Isso equivale a resto 0
+
+_OBS: O operador __+__ quando usado em strings realizará a concatenação de strings_
+__Ex:__ String nomeCompleto = "Humberto" + " Antonio"
