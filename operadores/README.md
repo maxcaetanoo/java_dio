@@ -61,3 +61,39 @@ Os operadores ternarios são uma form ade representar uma condição __(if/else)
 Os operadores ternários são representados por _?:_ como pode ser visto aoabixo.
 
 __Ex:__ String aprovacao = nota >= 7 ? "Aprovado" : "Reprovado";
+
+## Relacionais
+
+Os operadores relacionais tem como objetivo comparar igauldades ou diferenças entre o operando da esquerda e do da direita.
+Os operadores relacionais são:
+
+* _(==)_ Igualdade
+* _(!=)_ Diferença
+* _(>)_ Maior que
+* _(<)_ Menor que
+* _(>=)_ Maior ou igual a
+* _(<=)_ menor ou igual a
+
+__Ex:__
+
+    int n1 = 10;
+    int n2 = 11;
+    
+    if (n1 == n2) {
+        System.out.println("É igual");
+    } else {
+        System.out.println("É diferente");
+    }
+
+_O resultado para esse trecho de código será que é diferente pois __n1 == n2__ retorna false_
+
+_Obs: é importante lembrar que para comparar objetos é melhor usar o __.equals()__ para verificar._
+
+__Ex:__
+
+    String nomeUm = "Max";
+    String nomeDois = new String("Max");
+
+    System.out.println(nomeUm.equals(nomeDois));
+
+Como pode ser visto no exemplo acima podemos comparar se o conteúdo da variavel ___nomeUm___ é igual ao conteúdo do objeto ___nomeDois___.

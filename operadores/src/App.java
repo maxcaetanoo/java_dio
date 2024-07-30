@@ -26,5 +26,21 @@ public class App {
         String aprovacao = nota >= 7 ? "Aprovado" : "Reprovado"; // testa se a nota é maior ou igual a 7 caso sim
                                                                  // aprovado caso não reprovado
         System.out.println(aprovacao);
+
+        // Relacionais
+        int numeroUm = 20;
+        int numeroDois = 12;
+
+        boolean relacionamento = numeroUm == numeroDois;
+        System.out.println("O primeiro numero é igual ao segundo? " + relacionamento);
+
+        relacionamento = numeroUm != numeroDois;
+        System.out.println("O primeiro numero é diferente do segundo? " + relacionamento);
+
+        relacionamento = numeroUm > numeroDois;
+        System.out.println("O primeiro numero é maior que o segundo? " + relacionamento);
+
+        relacionamento = numeroUm < numeroDois;
+        System.out.println("O primeiro numero é menor que o segundo? " + relacionamento);
     }
 }
