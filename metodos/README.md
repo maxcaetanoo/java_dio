@@ -40,7 +40,7 @@ _ex: subirEscadas, rolarNoChao, voltarParaNivelAnterior._
 
 __Ex:__
 
-    somar (numero1, numero2) {
+    public int somar (int numero1, int numero2) {
         resultado = numero1 + numero2;
     }
 
@@ -51,3 +51,14 @@ Para definirmos métodos basta seguir a convenção abaixo:
 
 * __Qual a proposta do método?__ Ao responder essa pergunta será possivel definir o método.
 * __Qual o tipo de retorno esperado ao executar o método?__ Ao responder essa pergunta você será capaz de definir se o metodo terá ou não algum tipo de retorno.
+
+_Obs: Caso o método não retorne nenhum valor ele deve ser representado pela palava-chave __void__._
+
+__Os metodos podem necessitar de parâmetros para o funcionamento adequado__
+Os parâmetros sempre ficam contidos entre parênteses '( )' e servem para passar valores externos para dentro dos métodos.
+
+__Os metodos costuman apresentar exceções__
+Talvez seja necessário prevêr e tratar possiveis exceções de um método para que não venha apresentar problemas no funcionamento do programa.
+
+__Os metodos podem ser visiveis em vários ambitos__
+Podendo ser visivel em todo o programa, através de pacotes, herança ou apenas dentro do contexto da classe.
