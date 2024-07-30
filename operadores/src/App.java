@@ -42,5 +42,15 @@ public class App {
 
         relacionamento = numeroUm < numeroDois;
         System.out.println("O primeiro numero é menor que o segundo? " + relacionamento);
+
+        // Lógicos
+        boolean val1 = true;
+        boolean val2 = false;
+
+        if (val1 && val2) {
+            System.out.println("É verdadeiro"); // Essa condição só é exibida se ambos forem true.
+        } else {
+            System.out.println("É falso"); // Essa condição é exibida caso algum ou ambos não sejam true.
+        }
     }
 }

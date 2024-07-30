@@ -97,3 +97,20 @@ __Ex:__
     System.out.println(nomeUm.equals(nomeDois));
 
 Como pode ser visto no exemplo acima podemos comparar se o conteúdo da variavel ___nomeUm___ é igual ao conteúdo do objeto ___nomeDois___.
+
+## Lógicos
+
+Os operadores lógicos servem para comparar mais de uma operação relacional ou mais de uma variavel booleana, seus operadores são:
+
+* _(&&)_ Referente ao operador __E__
+* _(||)_ Referente ao operador __OU__
+
+__Ex:__
+
+    if (1 == 1 && 2 == 3) {
+        System.out.println("A operação é verdadeira");
+    } else {
+        System.out.println("A operação é falsa");
+    }
+
+_Nesse exemplo comparamos se __1 == 1__ e __2 == 3__ restornam true respectivamente, caso sim exibimos a primeira mensagem, caso não exibimos a segunda mensagem._
