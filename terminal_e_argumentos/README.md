@@ -20,3 +20,32 @@ Caso não existam arquivos compilados podemos executar o seginte comando para co
 
 Depois executamos o comando java
 > java <nome_da_classe>
+
+## Argumentos
+
+Em uma classe java com o método *__main__* quando a executamos, a mesma nos permite passar um array do tipo string *[ ]* com argumentos.
+
+__Ex:__
+> java <nome_da_classe> *<argumento_1>* *<argumento_2>*
+
+Supondo que a classe __Somar__ efetua uma soma entre 3 números podemos passar da seginte forma:
+> java Somar 10 20 30
+
+Mas para isso funcionar precisamos que nossa classe esteja construida da seguinte forma:
+
+    public class Somar {
+        public static void main(String[] args) {
+            int numero1, numero2, numero3, soma;
+
+            // recebendo os argumentos e convertendo para inteiros
+            numero1 = Integer.valueOf(args[0]);
+            numero2 = Integer.valueOf(args[1]);
+            numero3 = Integer.valueOf(args[2]);
+
+            // aqui efetuamos a soma do valores recebidos como argumentos
+            soma = numero1 + numero2 + numero3;
+
+            // e imprimimos na tela do usuário
+            System.out.println("A soma equivale a: " + soma);
+        }
+    }
