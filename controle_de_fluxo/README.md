@@ -73,3 +73,33 @@ Em operadores vimos a condição ternaria composta por *?:* agora temos também 
     String situação = media >=7 ? "Aprovado" : media >=5 ? "Recuperação" : "Reprovado";
 
 Pode parecer um pouco confuso no inicio, mas essa condicional reduz bastante nossa codficação e nos trás o mesmo resultado de uma condicional encadeada como a que foi apresentada acima.
+
+### Switch case
+
+Além das estruturas condicionais apresentadas anteriormente temos também a *Switch* que executa blocos de código caso a variavel seja igual ao *case* e para evitar que mais algum bloco seja executado adcionamos o *break* para encerrar o bloco atual e sair do switch.
+**Ex:**
+
+    int opcao = 1;
+
+    System.out.println("Caixa eletronico");
+    System.out.println("1 - Depositar");
+    System.out.println("2 - Sacar");
+    System.out.println("3 - Sair");
+    
+    Switch (opcao){
+        case 1:{
+            System.out.println("Efetuando depósito");
+            break;
+        }
+        case 2:{
+            System.out.println("Efetuando saque");
+            break;
+        }
+        case 3:{
+            System.out.println("Efetuando encerrando");
+            break;
+        }
+        default: {
+            System.out.println("Opção não encontrada");
+        }
+    }
