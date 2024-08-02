@@ -46,3 +46,5 @@ As condicionais compostas ocorrem quando temos duas validações ou mais, caso s
         System.out.println("Aluno reprovado");
     else
         System.out.println("Aluno aprovado");
+
+*Obs: Caso o bloco de código tenha mais de uma instrução é obrigatório o uso de chaves indicativas de inicio e fim do **if** ou **else***
