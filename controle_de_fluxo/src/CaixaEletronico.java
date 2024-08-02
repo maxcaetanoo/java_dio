@@ -4,28 +4,28 @@ import java.util.Scanner;
 
 public class CaixaEletronico {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        try (Scanner scanner = new Scanner(System.in).useLocale(Locale.US)) {
+            double valorDeSaque, saldo, novoSaldo;
+            String opcao;
+            saldo = 100.00;
 
-        double valorDeSaque, saldo, novoSaldo;
-        String opcao;
-        saldo = 100.00;
+            while (true) {
+                if (saldo > 0) {
+                    System.out.print("Digite o valor que deseja sacar: ");
+                    valorDeSaque = scanner.nextDouble();
 
-        while (true) {
-            if (saldo > 0) {
-                System.out.print("Digite o valor que deseja sacar: ");
-                valorDeSaque = scanner.nextDouble();
+                    novoSaldo = sacarValor(saldo, valorDeSaque);
+                    saldo = novoSaldo;
 
-                novoSaldo = sacarValor(saldo, valorDeSaque);
-                saldo = novoSaldo;
+                    System.out.println("Deseja continuar? [S/N]");
+                    opcao = scanner.next();
 
-                System.out.println("Deseja continuar? [S/N]");
-                opcao = scanner.next();
-
-                if ("N".equals(opcao.toUpperCase())) {
+                    if ("N".equals(opcao.toUpperCase())) {
+                        break;
+                    }
+                } else {
                     break;
                 }
-            } else {
-                break;
             }
         }
     }
