@@ -20,11 +20,10 @@ public class AvaliadorEscolar {
 
                 media = (nota1 + nota2 + nota3) / 3;
 
-                if (media >= 7) {
+                if (media >= 7)
                     System.out.println("Aluno aprovado com média " + media);
-                } else {
+                else
                     System.err.println("Aluno reprovado com média " + media);
-                }
 
                 System.out.println("Deseja verificar outro aluno? [S/N]");
                 opcao = scanner.next();
