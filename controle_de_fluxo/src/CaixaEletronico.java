@@ -7,7 +7,7 @@ public class CaixaEletronico {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         double valorDeSaque, saldo, novoSaldo;
-        String opcao = "S";
+        String opcao;
         saldo = 100.00;
 
         while (true) {
@@ -31,7 +31,7 @@ public class CaixaEletronico {
     }
 
     public static double sacarValor(double saldo, double valorDeSaque) {
-        double novoSaldo = 0;
+        double novoSaldo;
 
         if (saldo >= valorDeSaque) {
             novoSaldo = saldo - valorDeSaque;
