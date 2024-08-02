@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SobreMim",
+            "request": "launch",
+            "mainClass": "SobreMim",
+            "projectName": "terminal_e_argumentos_ab482bc4"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "Somar",
