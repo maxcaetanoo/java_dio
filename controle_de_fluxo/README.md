@@ -21,3 +21,28 @@ As estruturas condicionais podem ser **Simples** ou **Compostas**.
 ### Condicionais simples
 
 As condicionais simples ocorrem quando temos apenas uma validação que caso seja positiva será executado um bloco de código.
+**Ex:**
+
+    double saldo = 25;
+    double valoDeSaque = 10;
+
+    //O bloco de código dentro do if só será executado caso a condição seja verdadeira
+    if (saldo >= valorDeSaque) {
+        novoSaldo = saldo - valorDeSaque;
+        System.out.println("Valor " + valorDeSaque + " sacado com sucesso!");
+        System.out.println("Saldo restante é de R$" + novoSaldo);
+    }
+
+    System.out.println("O saldo atual é de: " + saldo);
+
+### Condicionais compostas
+
+As condicionais compostas ocorrem quando temos duas validações ou mais, caso seja verdadeira será executado um bloco de código, caso não passa para o próximo bloco nomeado de *else* que só é executado se for falso.
+**Ex:**
+
+    double media = 6.5;
+
+    if (media < 7)
+        System.out.println("Aluno reprovado");
+    else
+        System.out.println("Aluno aprovado");
