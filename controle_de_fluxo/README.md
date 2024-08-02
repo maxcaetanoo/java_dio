@@ -48,3 +48,17 @@ As condicionais compostas ocorrem quando temos duas validações ou mais, caso s
         System.out.println("Aluno aprovado");
 
 *Obs: Caso o bloco de código tenha mais de uma instrução é obrigatório o uso de chaves indicativas de inicio e fim do **if** ou **else***
+
+### Condições encadeadas
+
+Podemos além do if e do else ter muito mais condições para comprar mais outras situações, por um exemplo caso a primeira condição não seja verdadeira testamos se a terceira condição é verdadeira, ou a querta para só então chegarmos no else onde todas eram falsas.
+**Ex:**
+
+    double media = 6.5;
+
+    if (media < 7) //essa é a primeira condição a ser testada
+        System.out.println("Aluno reprovado");
+    else if (media >= 5) //essa é a condição que só é chamada se a primeira for falsa
+        System.out.println("Aluno ficou em recuperação");
+    else //essa é a ultima condição caso nada tenha sido verdadeiro
+        System.out.println("Aluno aprovado");

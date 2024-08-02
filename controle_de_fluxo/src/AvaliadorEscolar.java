@@ -22,6 +22,8 @@ public class AvaliadorEscolar {
 
                 if (media >= 7)
                     System.out.println("Aluno aprovado com média " + media);
+                else if (media >= 5)
+                    System.out.println("Aluno ficou em recuperação com média " + media);
                 else
                     System.err.println("Aluno reprovado com média " + media);
 
