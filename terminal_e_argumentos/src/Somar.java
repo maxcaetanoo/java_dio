@@ -3,9 +3,9 @@ public class Somar {
         int numero1, numero2, numero3, soma;
 
         // recebendo os argumentos
-        numero1 = Integer.valueOf(args[0]);
-        numero2 = Integer.valueOf(args[1]);
-        numero3 = Integer.valueOf(args[2]);
+        numero1 = Integer.parseInt(args[0]);
+        numero2 = Integer.parseInt(args[1]);
+        numero3 = Integer.parseInt(args[2]);
 
         // aqui efetuamos a soma do valores recebidos como argumentos
         soma = numero1 + numero2 + numero3;
