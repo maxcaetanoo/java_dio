@@ -62,3 +62,14 @@ Podemos além do if e do else ter muito mais condições para comprar mais outra
         System.out.println("Aluno ficou em recuperação");
     else //essa é a ultima condição caso nada tenha sido verdadeiro
         System.out.println("Aluno aprovado");
+
+### Condições ternarias encadeadas
+
+Em operadores vimos a condição ternaria composta por *?:* agora temos também as condições ternarias encadeadas que comparam mais de uma condição.
+**Ex:**
+
+    double media = 6;
+
+    String situação = media >=7 ? "Aprovado" : media >=5 ? "Recuperação" : "Reprovado";
+
+Pode parecer um pouco confuso no inicio, mas essa condicional reduz bastante nossa codficação e nos trás o mesmo resultado de uma condicional encadeada como a que foi apresentada acima.
