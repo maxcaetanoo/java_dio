@@ -175,6 +175,12 @@ O laço **While** *(do portugês 'enquanto')* executa blocos de código enquanto
 É importante sempre lembrar de que a condição deve ser possivel de se tornar falsa, caso não acabaremos com um loop infinito.
 **Ex:**
 
+    while (condicaoBoleana) {
+        //bloco de código
+    }
+
+**Ex:**
+
     import java.util.Locale;
     import java.util.Scanner;
 
@@ -199,3 +205,12 @@ O laço **While** *(do portugês 'enquanto')* executa blocos de código enquanto
     }
 
 Esse loop irá continuar enquanto o usuário não responder "N".
+
+### Do While
+
+O **Do While** *(do Portugês 'faça enquanto')* executa um bloco de código e depois verifica se a condição foi verdadeira ou falsa caso seja falsa encerra com no mínimo uma execução diferentemente do **While** que ao ser falsa a condicional o bloco de código não será executado nenhuma vez.
+**Ex:**
+
+    do {
+        //bloco de código
+    } while (condicaoBoleana);
