@@ -103,3 +103,21 @@ Além das estruturas condicionais apresentadas anteriormente temos também a *Sw
             System.out.println("Opção não encontrada");
         }
     }
+
+## Estruturas de repetição
+
+Laços de repetição, loops ou estruturas de repetição como são nomeados, são comandos que permitem a iteração de blocos de código, permitindo assim a repetição do mesmo trecho de código sob determinadas condições.
+**Os laços de repetição são representados pelas seguintes estruturas:**
+
+* **For** *(para)*
+* **While** *(enquanto)*
+* **Do While** *(faça enquanto)*
+
+### For
+
+O comando **for** *(do português 'para')* permite que uma variável contadora seja testada e incrementada a cada iteração. O comando for recebe uma *variável contadora*, uma *condição* e o *valor de incremento*.
+**Ex:**
+
+    for ('blocoDeInicializacao', 'blocoDeCondicao', 'blocoDeIncremento'){
+        //Bloco de código que será executado a cada loop até que a expressão se torne falsa.
+    }
