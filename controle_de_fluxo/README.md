@@ -121,3 +121,50 @@ O comando **for** *(do português 'para')* permite que uma variável contadora s
     for ('blocoDeInicializacao', 'blocoDeCondicao', 'blocoDeIncremento'){
         //Bloco de código que será executado a cada loop até que a expressão se torne falsa.
     }
+
+Também podemos usar o controle de fluxo **For** para percorrer *arrays* e *coleções*.
+**Ex:**
+
+    String jogos[] = { "Mortal Kombat", "Crash", "Mario", "Zelda", "Pokemon" };
+
+    System.out.println("\nSegue abaixo uma lista enumerada dos jogos favoritos de Max: \n");
+    
+    for (int indice = 0; indice < jogos.length; indice++) {
+        System.out.println(indice + 1 + " - " + jogos[indice]);
+    }
+
+***Obs: Em Arrays a contagem de elementos sempre inicia em 0.***
+
+### For Each
+
+O **For Each** é o tipo de interação totalmente direcionado aos elementos de *arrays* e *coleções*.
+**Ex:**
+
+    String jogos[] = { "Mortal Kombat", "Crash", "Mario", "Zelda", "Pokemon" };
+
+    System.out.println("\nSegue abaixo uma lista dos jogos favoritos de Max: \n");
+    
+    for (String jogo : jogos) {
+        System.out.println(jogo);
+    }
+
+Nesse exemplo conseguimos percorrer os objetos do array sem precisar identificar sus indices.
+
+### Break e Continue
+
+O **break** nos permite encerrar todas as iterações após sua execução e sair do loop, já o **continue** nos permite apenas pular para o proximo loop ignorando o loop atual.
+**Ex:**
+
+    String jogos[] = { "Mortal Kombat", "Crash", "Mario", "Zelda", "Pokemon", "YU GI OH", "Clash Royal" };
+
+    System.out.println("\nSegue abaixo uma lista dos jogos favoritos de Max: \n");
+
+    for (String jogo : jogos) {
+        if ("YU GI OH".equals(jogo)) {
+            break; // caso o jogo seja YU GI OH o loop é encerrado
+        } else if (!"Zelda".equals(jogo)) {
+            System.out.println(jogo); // exibe todos os jogos exceto Zelda.
+        } else {
+            continue; // caso o jogo seja Zelda e não seja YU GI OH pula para o próximo loop.
+        }
+    }
