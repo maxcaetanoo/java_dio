@@ -168,3 +168,34 @@ O **break** nos permite encerrar todas as iterações após sua execução e sai
             continue; // caso o jogo seja Zelda e não seja YU GI OH pula para o próximo loop.
         }
     }
+
+### While
+
+O laço **While** *(do portugês 'enquanto')* executa blocos de código enquanto uma condição for verdadeira, caso a mesma já inicie falsa o laço While não será executado nenhuma vez.
+É importante sempre lembrar de que a condição deve ser possivel de se tornar falsa, caso não acabaremos com um loop infinito.
+**Ex:**
+
+    import java.util.Locale;
+    import java.util.Scanner;
+
+    public class EnquantoEuQuiser {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+            String opcao;
+            int contador = 0;
+
+            while (true) {
+                contador++;
+                System.out.println("O laço repetiu " + contador + "X");
+
+                System.out.println("Deseja continuar? [S/N]");
+                opcao = scanner.next();
+
+                if (opcao.toUpperCase().equals("N")) {
+                    break;
+                }
+            }
+        }
+    }
+
+Esse loop irá continuar enquanto o usuário não responder "N".
