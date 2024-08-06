@@ -235,3 +235,14 @@ java.io.FileNotFoundException | Quando tentamos ler ou escrever, em um arquivo q
 **Try** - Define um bloco de código que será testado quanto a erros em seu processo de execução.
 **Catch** - Define um bloco de código a ser executado caso ocorra erro no bloco *Try*.
 **Finally** - Define um bloco de código que será executado independentemente de uma exeção ter ou não acontecido.
+
+### Execeções personalizadas
+
+Também é possível criar exceções personalizadas apra facilitar o tratamento de erros.
+**Ex:**
+
+    plublic class ExcecaoPersonalizada extends Exception{
+        //Essa seria a nossa exceção personalizada e poderia ser usada para casos específicos em trechos específicos de código para facilitar nossa correção.
+    }
+
+Basicamente as exceptions personalizadas são criadas como classes diferentes que extendem a classe ***Exception***.
