@@ -214,3 +214,24 @@ O **Do While** *(do Portugês 'faça enquanto')* executa um bloco de código e d
     do {
         //bloco de código
     } while (condicaoBoleana);
+
+## Estruturas excepcionais
+
+Ao executar um código em Java diversos tipos de erros podem acontecer, como erros relacionados à codificação, entradas erradas ou outros imprevistos.
+
+Quando ocorre algum tipo de erro em Java o mesmo exibe uma mensagem de **Exceção** informando onde ocorreu o problema e o seu tipo.
+
+No Java um erro é algo que quebra a aplicação e encerra a mesma, mas as exceções são normalmente erros de interpretação como uma divisão por 0 ou outros tipos que podem gerar um fluxo inesperado.
+
+Nome|Causa|
+---|---|
+java.lang.NullPointerException|Quando tentamos obter alguma informação de uma variável nula.
+java.lang.ArithmeticException | Quando tentamos dividir um valor por zero.
+java.sql.SQLException | Quando existe algum erro, relacionado a interação com banco de dados.
+java.io.FileNotFoundException | Quando tentamos ler ou escrever, em um arquivo que não existe.
+
+**Tratamento de erros**
+
+**Try** - Define um bloco de código que será testado quanto a erros em seu processo de execução.
+**Catch** - Define um bloco de código a ser executado caso ocorra erro no bloco *Try*.
+**Finally** - Define um bloco de código que será executado independentemente de uma exeção ter ou não acontecido.
