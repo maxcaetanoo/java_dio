@@ -31,6 +31,16 @@ __Obs:__ O tipo float deve ser valorado sempre com a letra "F" ao final e o long
     float pi = 3.14F;
     long cpf = 98765432109L;
 
+__Obs2:__ O tipo float pode ter ser resultado formatado da seguinte forma:
+
+    int nota1 = 10;
+    int nota2 = 2;
+    int nota3 = 10;
+    int nota4 = 0;
+    double media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+    System.out.println("%.1f", media); // será retornado 5.5 pois defini que teria apenas uma casa decimal.
+
 ## Variáveis
 
 _A declaração de variáveis é feita a partir de sua estrutura padrão:_
