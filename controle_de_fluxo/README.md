@@ -246,3 +246,8 @@ Também é possível criar exceções personalizadas apra facilitar o tratamento
     }
 
 Basicamente as exceptions personalizadas são criadas como classes diferentes que extendem a classe ***Exception***.
+
+*Obs: Também é possivel passar uma mensagem de erro personalizada em classes de erros já existentes.*
+**Ex:**
+
+    throw new IllegalArgumentException("Argumento incorreto.");
