@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/controle_de_fluxo/controle_de_fluxo.iml" filepath="$PROJECT_DIR$/controle_de_fluxo/controle_de_fluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java_dio.iml" filepath="$PROJECT_DIR$/.idea/java_dio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/metodos/metodos.iml" filepath="$PROJECT_DIR$/metodos/metodos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operadores/operadores.iml" filepath="$PROJECT_DIR$/operadores/operadores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/terminal_e_argumentos/terminal_e_argumentos.iml" filepath="$PROJECT_DIR$/terminal_e_argumentos/terminal_e_argumentos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tipos-variaveis/tipos-variaveis.iml" filepath="$PROJECT_DIR$/tipos-variaveis/tipos-variaveis.iml" />
+    </modules>
+  </component>
+</project>
