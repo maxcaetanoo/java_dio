@@ -1,17 +1,14 @@
 package lanchonete;
 
 public class Cozinheiro {
-	// metodo publico
 	public void adcionarLancheNoBalcao() {
 		System.out.println("Adcionando hamburguer simples no balcão");
 	}
-	
-	//metodo publico
+
 	public void adcionarBebidaNoBalcao() {
 		System.out.println("Adcionando suco de fruta fresca no balcão");
 	}
-	
-	//metodo publico
+
 	public void adcionarComboNoBalcao() {
 		adcionarLancheNoBalcao();
 		adcionarBebidaNoBalcao();
@@ -49,5 +46,42 @@ public class Cozinheiro {
 	
 	public void lavarIngredientesSuco() {
 		System.out.println("Lavando fruta freca");
+	}
+	
+	public void fritarIngedienteParaHamburguer() {
+		System.out.println("Fritando carne de Hamburguer");
+	}
+	
+	public void cortarIngredientesParaHamburguer() {
+		System.out.println("Cortando, tomate, pão e alface");
+	}
+	
+	public void cortarFrutasParaSuco() {
+		System.out.println("Cortando goiaba, abrindo maracujá");
+	}
+	
+	public void pedirParaTrocarGas(Atendente atendente) {
+		atendente.trocarGas();
+	}
+	
+	public void pedirParaTrocarGas(Almocharife almocharife) {
+		almocharife.trocarGas();
+	}
+	
+	public void pedirIngredientesParaHamburguer(Almocharife almocharife) {
+		almocharife.pegarIngredientes();
+	}
+	
+	public void pedirParaAdcionarLancheNoBalcao(Atendente atendente) {
+		atendente.adcionarLancheNoBalcao();
+	}
+
+	public void pedirParaAdcionarBebidaNoBalcao(Atendente atendente) {
+		atendente.adcionarBebidaNoBalcao();
+	}
+
+	public void pedirParaAdcionarComboNoBalcao(Atendente atendente) {
+		atendente.adcionarLancheNoBalcao();
+		atendente.adcionarBebidaNoBalcao();
 	}
 }
