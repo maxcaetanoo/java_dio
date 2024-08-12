@@ -1,6 +1,48 @@
 package lanchonete;
+import java.util.concurrent.TimeUnit;
 
 public class Cozinheiro {
+	public void tempoLanche() {
+		try {
+			TimeUnit.SECONDS.sleep(2);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void tempoBebida() {
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void prepararLanche(Almocharife almocharife) {
+		System.out.println("Lanche tipo hamburguer sendo preparado...");
+		pedirIngredientesParaHamburguer(almocharife);
+		tempoLanche();
+		lavarIngredientesLanche();
+		tempoLanche();
+		cortarIngredientesParaHamburguer();
+		tempoLanche();
+	}
+	
+	public void prepararSuco(Almocharife almocharife) {
+		System.out.println("Suco de frutas frescas sendo preparado...");
+		pedirIngredientesParaBebida(almocharife);
+		tempoBebida();
+		lavarIngredientesSuco();
+		tempoBebida();
+		cortarFrutasParaSuco();
+		tempoBebida();
+	}
+	
+	public void prepararCombo(Almocharife almocharife) {
+		prepararLanche(almocharife);
+		prepararSuco(almocharife);
+	}
+	
 	public void adcionarLancheNoBalcao() {
 		System.out.println("Adcionando hamburguer simples no balcão");
 	}
@@ -12,32 +54,6 @@ public class Cozinheiro {
 	public void adcionarComboNoBalcao() {
 		adcionarLancheNoBalcao();
 		adcionarBebidaNoBalcao();
-	}
-	
-	public void prepararLanche() {
-		System.out.println("Lanche tipo hamburguer sendo preparado...");
-	}
-	
-	public void prepararSuco() {
-		System.out.println("Suco de frutas frescas sendo preparado...");
-	}
-	
-	public void prepararCombo() {
-		prepararLanche();
-		prepararSuco();
-	}
-	
-	public void separarIngredientesParaLanche() {
-		System.out.println("Separando pão, carne, alface, tomate e molho especial");
-	}
-	
-	public void separarIngredientesParaSuco() {
-		System.out.println("Separando fruta fresca, água e açucar");
-	}
-	
-	public void separarIngredientesParaCombo() {
-		separarIngredientesParaLanche();
-		separarIngredientesParaSuco();
 	}
 	
 	public void lavarIngredientesLanche() {
@@ -69,19 +85,14 @@ public class Cozinheiro {
 	}
 	
 	public void pedirIngredientesParaHamburguer(Almocharife almocharife) {
-		almocharife.pegarIngredientes();
+		almocharife.pegarIngredientes(1);
 	}
 	
-	public void pedirParaAdcionarLancheNoBalcao(Atendente atendente) {
-		atendente.adcionarLancheNoBalcao();
+	public void pedirIngredientesParaBebida(Almocharife almocharife) {
+		almocharife.pegarIngredientes(2);
 	}
-
-	public void pedirParaAdcionarBebidaNoBalcao(Atendente atendente) {
-		atendente.adcionarBebidaNoBalcao();
-	}
-
-	public void pedirParaAdcionarComboNoBalcao(Atendente atendente) {
-		atendente.adcionarLancheNoBalcao();
-		atendente.adcionarBebidaNoBalcao();
+	
+	public void pedirIngredientesParaCombo(Almocharife almocharife) {
+		almocharife.pegarIngredientes(3);
 	}
 }

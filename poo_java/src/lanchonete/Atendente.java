@@ -1,20 +1,29 @@
 package lanchonete;
 
 public class Atendente {
-	public void anotarPedido() {
-		System.out.println("Anotando pedido do cliente");		
+	public void anotarPedido(int pedido, Cozinheiro cozinheiro, Almocharife almocharife) {
+		if (pedido == 3) {
+			System.out.println("Anotando pedido do cliente");
+			pedirParaPrepararCombo(cozinheiro, almocharife);
+		} else if (pedido == 2) {
+			System.out.println("Anotando pedido do cliente");
+			pedirParaPrepararBebida(cozinheiro, almocharife);
+		} else {
+			System.out.println("Anotando pedido do cliente");
+			pedirParaPrepararLanche(cozinheiro, almocharife);
+		}
 	}
 	
-	public void pedirParaPrepararLanche(Cozinheiro cozinheiro) {
-		cozinheiro.prepararLanche();
+	public void pedirParaPrepararLanche(Cozinheiro cozinheiro, Almocharife almocharife) {
+		cozinheiro.prepararLanche(almocharife);
 	}
 	
-	public void pedirParaPrepararBebida(Cozinheiro cozinheiro) {
-		cozinheiro.prepararSuco();
+	public void pedirParaPrepararBebida(Cozinheiro cozinheiro, Almocharife almocharife) {
+		cozinheiro.prepararSuco(almocharife);
 	}
 	
-	public void pedirParaPrepararCombo(Cozinheiro cozinheiro) {
-		cozinheiro.prepararCombo();
+	public void pedirParaPrepararCombo(Cozinheiro cozinheiro, Almocharife almocharife) {
+		cozinheiro.prepararCombo(almocharife);
 	}
 
 	public void trocarGas() {

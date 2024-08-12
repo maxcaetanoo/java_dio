@@ -8,7 +8,7 @@ public class Estabelecimento{
 		Cozinheiro cozinheiro = new Cozinheiro();
 		
 		almocharife.controlarEntradaDeAlimentos();
-		
+		cliente.fazerPedido(atendente, cozinheiro, almocharife);
 	}
 
 }
