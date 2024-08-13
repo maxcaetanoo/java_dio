@@ -63,23 +63,23 @@ public class Cozinheiro {
 		adcionarBebidaNoBalcao();
 	}
 	
-	public void lavarIngredientesLanche() {
+	private void lavarIngredientesLanche() {
 		System.out.println("Lavando tomates e alface");
 	}
 	
-	public void lavarIngredientesSuco() {
+	private void lavarIngredientesSuco() {
 		System.out.println("Lavando fruta fresca");
 	}
 	
-	public void fritarIngedienteParaHamburguer() {
+	private void fritarIngedienteParaHamburguer() {
 		System.out.println("Fritando carne de Hamburguer");
 	}
 	
-	public void cortarIngredientesParaHamburguer() {
+	private void cortarIngredientesParaHamburguer() {
 		System.out.println("Cortando, tomate, pão e alface");
 	}
 	
-	public void cortarFrutasParaSuco() {
+	private void cortarFrutasParaSuco() {
 		System.out.println("Cortando goiaba, abrindo maracujá");
 	}
 	
