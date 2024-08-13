@@ -1,5 +1,8 @@
-package lanchonete;
+package lanchonete.atendimento.cozinha;
 import java.util.concurrent.TimeUnit;
+
+import lanchonete.area.cliente.Cliente;
+import lanchonete.atendimento.Atendente;
 
 public class Cozinheiro {
 	public void tempoLanche() {
@@ -18,7 +21,7 @@ public class Cozinheiro {
 		}
 	}
 	
-	public void prepararLanche(Almocharife almocharife) {
+	public void prepararLanche(Almocharife almocharife, Atendente atendente, Cliente cliente) {
 		System.out.println("Lanche tipo hamburguer sendo preparado...");
 		pedirIngredientesParaHamburguer(almocharife);
 		tempoLanche();
@@ -26,9 +29,12 @@ public class Cozinheiro {
 		tempoLanche();
 		cortarIngredientesParaHamburguer();
 		tempoLanche();
+		fritarIngedienteParaHamburguer();
+		tempoLanche();
+		pedirParaPorHamburguerNoBalcao(atendente, cliente);
 	}
 	
-	public void prepararSuco(Almocharife almocharife) {
+	public void prepararSuco(Almocharife almocharife, Atendente atendente, Cliente cliente) {
 		System.out.println("Suco de frutas frescas sendo preparado...");
 		pedirIngredientesParaBebida(almocharife);
 		tempoBebida();
@@ -36,11 +42,12 @@ public class Cozinheiro {
 		tempoBebida();
 		cortarFrutasParaSuco();
 		tempoBebida();
+		pedirParaPorSucoNoBalcao(atendente, cliente);
 	}
 	
-	public void prepararCombo(Almocharife almocharife) {
-		prepararLanche(almocharife);
-		prepararSuco(almocharife);
+	public void prepararCombo(Almocharife almocharife, Atendente atendente, Cliente cliente) {
+		prepararLanche(almocharife, atendente, cliente);
+		prepararSuco(almocharife, atendente, cliente);
 	}
 	
 	public void adcionarLancheNoBalcao() {
@@ -61,7 +68,7 @@ public class Cozinheiro {
 	}
 	
 	public void lavarIngredientesSuco() {
-		System.out.println("Lavando fruta freca");
+		System.out.println("Lavando fruta fresca");
 	}
 	
 	public void fritarIngedienteParaHamburguer() {
@@ -80,6 +87,14 @@ public class Cozinheiro {
 		atendente.trocarGas();
 	}
 	
+	public void pedirParaPorHamburguerNoBalcao(Atendente atendente, Cliente cliente) {
+		atendente.adcionarLancheNoBalcao(cliente, atendente);
+	}
+	
+	public void pedirParaPorSucoNoBalcao(Atendente atendente, Cliente cliente) {
+		atendente.adcionarBebidaNoBalcao(cliente, atendente);
+	}
+	
 	public void pedirParaTrocarGas(Almocharife almocharife) {
 		almocharife.trocarGas();
 	}
@@ -95,4 +110,5 @@ public class Cozinheiro {
 	public void pedirIngredientesParaCombo(Almocharife almocharife) {
 		almocharife.pegarIngredientes(3);
 	}
+	
 }
