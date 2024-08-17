@@ -14,6 +14,16 @@ public class Funcionario {
 		this.CPF = CPF;
 	}
 	
+	// Construtor apenas com o nome e a função para o caso de freelancer
+	public Funcionario(String nome, String funcao) {
+		this.nome = nome;
+		this.funcao = funcao;
+	}
+	
+	// Construtor sem parâmetros para caso seja necessário em algum local da aplicação
+	public Funcionario() {
+	}
+
 	// Getters para todos os atributos.
 	public String getNome() {
 		return nome;
